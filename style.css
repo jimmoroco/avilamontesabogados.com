@@ -41,8 +41,8 @@
 
 .logo {
     margin-top: 40px;
-    width: 253px;
-    height: 194px;
+    width: 300px;
+    height: 300px;
 }
 
 .menu {
@@ -86,9 +86,11 @@
     padding: 0 10px;
     margin-top: 15px;
 }
-.section-child{
+
+.section-child {
     max-width: 200px;
 }
+
 .section-1,
 .section-2 {
     padding: 0 15px;
@@ -150,6 +152,138 @@
     height: 60px;
 }
 
+/* SERVICIOS */
+.section-familia-1,
+.section-familia-2,
+.section-laboral-1,
+.section-laboral-2,
+.section-civil-1,
+.section-civil-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.section-familia-2 {
+    margin-top: 20px;
+}
+
+.section-civil-2 {
+    margin-bottom: 30px;
+}
+
+.section-familia-text,
+.section-laboral-text,
+.section-civil-text {
+    font-weight: bold;
+}
+
+.titulo-familia,
+.titulo-laboral,
+.titulo-civil {
+    margin: 30px 30px;
+}
+
+.familia-separaciones {
+    padding: 0 15px;
+}
+
+.img-familia-separaciones {
+    width: 260px;
+    height: 180px;
+}
+
+.img-familia-guarda {
+    width: 260px;
+    height: 180px;
+}
+
+.img-familia-medidas {
+    width: 260px;
+    height: 180px;
+}
+
+.img-familia-pension {
+    width: 260px;
+    height: 180px;
+}
+
+.img-familia-modificacion {
+    width: 260px;
+    height: 180px;
+}
+
+.img-familia-filiacion {
+    width: 260px;
+    height: 180px;
+}
+
+/******/
+.img-laboral-improcedente {
+    width: 260px;
+    height: 180px;
+}
+
+.img-laboral-disciplinario {
+    width: 260px;
+    height: 180px;
+}
+
+.img-laboral-objetivo {
+    width: 260px;
+    height: 180px;
+}
+
+.img-laboral-nulo {
+    width: 260px;
+    height: 180px;
+}
+
+.img-laboral-acoso {
+    width: 260px;
+    height: 180px;
+}
+
+.img-laboral-reclamacion {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-improcedente {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-disciplinario {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-objetivo {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-nulo {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-acoso {
+    width: 260px;
+    height: 180px;
+}
+
+.img-civil-reclamacion {
+    width: 260px;
+    height: 180px;
+}
+
+.section-servicio-texto{
+    margin: 30px;
+    padding: 0 15px;
+    font-size: 20px;
+}
 /* FOOTER */
 /* footer {
     position: absolute;
@@ -215,12 +349,12 @@
 
 /* RESPONSIVE */
 @media(min-width:768px) {
-    footer {
+    /* footer {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-    }
+    } */
 }
 
 @media(max-width:768px) {
@@ -266,10 +400,11 @@
     }
 
     /* INICIO */
-    .section-child{
+    .section-child {
         max-width: 800px;
         margin-top: 20px;
     }
+
     .section-1,
     .section-2 {
         padding: 0 80px;
@@ -279,6 +414,18 @@
 
     .section-titulo-cobramos {
         font-size: 18px;
+    }
+
+    /* SERVICIOS */
+    .section-familia-1,
+    .section-familia-2,
+    .section-laboral-1,
+    .section-laboral-2,
+    .section-civil-1,
+    .section-civil-2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
     /* FOOTER */
