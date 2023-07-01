@@ -86,13 +86,15 @@
     padding: 0 10px;
     margin-top: 15px;
 }
-
+.section-child{
+    max-width: 200px;
+}
 .section-1,
 .section-2 {
     padding: 0 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .section-1 {
@@ -264,9 +266,13 @@
     }
 
     /* INICIO */
+    .section-child{
+        max-width: 800px;
+        margin-top: 20px;
+    }
     .section-1,
     .section-2 {
-        padding: 0 15px;
+        padding: 0 80px;
         flex-direction: column;
         justify-content: space-between;
     }
