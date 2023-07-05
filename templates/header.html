@@ -1,0 +1,41 @@
+<div class="header-container">
+    <img class="logo" src="/images/logo.png" alt="">
+    <input type="checkbox" id="check">
+    <label for="check" class="show-menu">
+        &#8801
+    </label>
+    <nav class="menu">
+        <a href="/index.html">Inicio</a>
+        <a href="/pages/servicios.html">Servicio</a>
+        <a href="#" 
+            onmouseover="showMenu('menuTramitesExt',true);"
+            onmouseout="showMenu('menuTramitesExt',false);">
+            Tr&aacute;mites Extranjer&iacute;a
+            <div id="menuTramitesExt" onmouseover="showMenu(this.id,true);"
+                                      onmouseout="showMenu(this.id,false);"
+                class="dropdown-content-1">
+                <a href="/pages/nacionalidad.html">Nacionalidad</a>
+                <a href="/pages/residencia.html">Residencia por arraigo</a>
+                <a href="/pages/permisos.html">Permisos de residencia</a>
+            </div>
+        </a>
+        <a href="#"
+            onmouseover="showMenu('menuCiudadanosCo',true);"
+            onmouseout="showMenu('menuCiudadanosCo',false);">
+            Ciudadanos Comunitarios
+            <div id="menuCiudadanosCo" onmouseover="showMenu(this.id,true);"
+                                      onmouseout="showMenu(this.id,false);"
+                class="dropdown-content-2">
+                <a href="/pages/matrimonios.html">Matrimonios mixtos</a>
+                <a href="/pages/renovacion.html">Renovación de tarjeta comunitaria</a>
+            </div>
+        </a>
+        <a href="#">Contacto</a>
+        <label for="check" class="hide-menu">
+            &#215
+        </label>
+    </nav>
+</div>
+<div class="header-titulo">
+    <h3>DESPACHO DE ABOGADOS ESPECIALISTAS EN EXTRANJERIA</h3>
+</div>
