@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+    <section class="section-contact">
+        <div class="div-contact">
+            <h2>Ponerse en Contacto</h2>
+            <div class="div-details">
+                <div class="div-details-title">
+                    <span>&#128217;</span>
+                    <h4>Detalles de contacto</h4>
+                </div>
+                <div class="div-details-body">
+                    <p>Direcci&oacute;n: Tarragona</p>
+                    <p>Tel&eacute;fono: 680351119</p>
+                    <p>Email: roxana&#64;avilamontesabogados.com</p>
+                </div>
+            </div>
+            <div class="div-scheduler">
+                <div class="div-scheduler-title">
+                    <span>&#128339;</span>
+                    <h4>Horario</h4>
+                </div>
+                <div class="div-details-body">
+                    <p>Lunes a Jueves 9:00 a 14:00 a 16:00 a 19:00</p>
+                    <p>Viernes de 09:00 a 14:00</p>
+                </div>
+            </div>
+            <div class="div-social">
+                <div class="div-social-title">
+                    <span>&#129309;</span>
+                    <h4>S&iacute;ganos en redes</h4>
+                </div>
+                <div class="div-social-body">
+                    <p>Lunes a Jueves 9:00 a 14:00 a 16:00 a 19:00</p>
+                    <p>Viernes de 09:00 a 14:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="div-meet">
+            <h2 class="center">Agenda una Cita</h2>
+            <div class="div-meet-form">
+                <div>
+                    <form action="https://formspree.io/f/mpzgzapn" method="POST">
+                        <div class="section-form-1">
+                            <div class="section-name">
+                                <div>
+                                    <label for="name">
+                                        <h4>Nombre</h4>
+                                    </label>
+                                    <input class="input-form-name" type="text" id="name" name="name" placeholder="Nombre" required
+                                           oninvalid="setCustomValidity('Ingrese su nombre.')"
+                                           oninput="setCustomValidity('')">
+                                </div>
+                                <div>
+                                    <label class="label-form" for="lastname">
+                                        <h4>Apellidos</h4>
+                                    </label>
+                                    <input class="input-form-name" type="text" id="lastname" name="lastname" placeholder="Apellidos" required
+                                           oninvalid="setCustomValidity('Ingrese su apellido.')"
+                                           oninput="setCustomValidity('')">
+                                </div>
+                            </div>
+                            <div class=" section-contact-tel-email">
+                                    <div>
+                                        <label class="label-form" for="email">
+                                            <h4>Correo electr&oacute;nico</h4>
+                                        </label>
+                                        <input class="input-form-contact" type="email" id="email" name="email" placeholder="Email" required
+                                               oninvalid="setCustomValidity('Ingrese su correo electrónico.')"
+                                               oninput="setCustomValidity('')">
+                                    </div>
+                                    <div>
+                                        <label class="label-form" for="phonenumber">
+                                            <h4>N&uacute;mero de tel&eacute;fono</h4>
+                                        </label>
+                                        <input class="input-form-contact" ttype="tel" id="phonenumber"
+                                            name="phonenumber" placeholder="Telefono">
+                                    </div>
+                                </div>
+                                <label class="label-form" for="message">
+                                    <h4>Mensaje</h4>
+                                </label>
+                                <textarea class="input-form-message" name="message" id="message" placeholder="Mensaje" required
+                                          oninvalid="setCustomValidity('Ingrese su consulta.')"
+                                          oninput="setCustomValidity('')"></textarea>
+                            </div>
+                            <div class="section-form-2">
+                                <button class="button-form" type="submit">Solicitar una cita</button>
+                            </div>
+                    </form>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+    </footer>
+    <script src="/js/js.js"></script>
+</body>
+
+</html>

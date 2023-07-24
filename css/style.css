@@ -31,7 +31,6 @@ html {
 }
 
 .header-container {
-
     height: 250px;
     padding: 0 15px;
     color: #fff;
@@ -91,8 +90,9 @@ html {
     display: none;
 }
 
-.dropdown-content-1,
-.dropdown-content-2 {
+.dropdown-content {
+    margin: 0px;
+    padding: 0px;
     display: none;
     position: absolute;
     text-align: center;
@@ -100,14 +100,14 @@ html {
     z-index: 101;
 }
 
-.dropdown-content-1 a {
+#menuTramitesExt a {
     padding: 5px;
-    margin-left: 148px;
+    margin-left: 151px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content-2 a {
+#menuCiudadanosCo a {
     padding: 5px;
     margin-left: 300px;
     text-decoration: none;
@@ -253,7 +253,6 @@ html {
     height: 180px;
 }
 
-/******/
 .img-laboral-improcedente {
     width: 260px;
     height: 180px;
@@ -321,12 +320,6 @@ html {
 }
 
 /* FOOTER */
-/* footer {
-    margin-bottom: 0px;
-      bottom: 0;
-    left: 0;
-    width: 100%; 
-} */
 .container-contact {
     padding: 13px;
     background: var(--color-one);
@@ -380,6 +373,112 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* CONTACTO */
+.section-contact {
+    margin: 30px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.div-contact {
+    margin-bottom: 25px;
+}
+
+.div-details,
+.div-scheduler,
+.div-social {
+    margin-bottom: 20px;
+}
+
+.div-details-title,
+.div-scheduler-title,
+.div-social-title {
+    margin-top: 20px;
+    display: flex;
+}
+
+.div-details-body,
+.div-scheduler-body,
+.div-social-body {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 23px;
+}
+
+.text-form {
+    width: 80px;
+}
+
+.section-form-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.section-form-2 {
+    width: 100%;
+    display: flex;
+}
+
+.div-meet-form {
+    padding-top: 20px;
+}
+
+.section-name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.section-contact-tel-email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.label-form {
+    padding-top: 5px;
+}
+
+.input-form-contact,
+.input-form-email,
+.input-form-tel,
+.input-form-name,
+.input-form {
+    height: 25px;
+}
+
+.input-form-contact,
+.input-form-name {
+    width: 240px;
+}
+
+.input-form-message{
+    height: 100px;
+}
+
+.input-form {
+    width: 500px;
+}
+
+.section-form-2 {
+    margin-top: 10px;
+}
+
+.button-form {
+    width: 100%;
+    height: 35px;
+}
+
+.button-form:active {
+    transform: scale(0.9);
 }
 
 /* RESPONSIVE */
@@ -454,6 +553,16 @@ html {
         right: 0;
     }
 
+    #menuTramitesExt a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        /* padding-left: 5px;
+        margin-bottom: 2px;*/
+        margin-top: 1px; 
+        margin-left: 230px;
+        /* margin-right: 60px; */
+    }
+
     /* INICIO */
     .section-child {
         max-width: 800px;
@@ -483,9 +592,14 @@ html {
         flex-direction: column;
     }
 
+    /* CONTACT*/
+    .section-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
     /* FOOTER */
-
-
     .container-footer {
         font-size: 8px;
         text-align: center;

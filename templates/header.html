@@ -7,30 +7,22 @@
     <nav class="menu">
         <a href="/index.html">Inicio</a>
         <a href="/pages/servicios.html">Servicio</a>
-        <a href="#" 
-            onmouseover="showMenu('menuTramitesExt',true);"
-            onmouseout="showMenu('menuTramitesExt',false);">
+        <a href="#" onclick="showMenu('menuTramitesExt',true, 'aMenuCiudadanos,aMenuContacto');">
             Tr&aacute;mites Extranjer&iacute;a
-            <div id="menuTramitesExt" onmouseover="showMenu(this.id,true);"
-                                      onmouseout="showMenu(this.id,false);"
-                class="dropdown-content-1">
+            <div id="menuTramitesExt" class="dropdown-content">
                 <a href="/pages/nacionalidad.html">Nacionalidad</a>
                 <a href="/pages/residencia.html">Residencia por arraigo</a>
                 <a href="/pages/permisos.html">Permisos de residencia</a>
             </div>
         </a>
-        <a href="#"
-            onmouseover="showMenu('menuCiudadanosCo',true);"
-            onmouseout="showMenu('menuCiudadanosCo',false);">
+        <a href="#" id='aMenuCiudadanos' onclick="showMenu('menuCiudadanosCo',true,'aMenuContacto');">
             Ciudadanos Comunitarios
-            <div id="menuCiudadanosCo" onmouseover="showMenu(this.id,true);"
-                                      onmouseout="showMenu(this.id,false);"
-                class="dropdown-content-2">
+            <div id="menuCiudadanosCo" class="dropdown-content">
                 <a href="/pages/matrimonios.html">Matrimonios mixtos</a>
                 <a href="/pages/renovacion.html">Renovación de tarjeta comunitaria</a>
             </div>
         </a>
-        <a href="#">Contacto</a>
+        <a href="/pages/contacto.html" id='aMenuContacto'>Contacto</a>
         <label for="check" class="hide-menu">
             &#215
         </label>
