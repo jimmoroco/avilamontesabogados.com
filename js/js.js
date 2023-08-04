@@ -1,3 +1,5 @@
+window.onresize = resizePage;
+
 window.onbeforeunload = () => {
     for (const form of document.getElementsByTagName('form')) {
         form.reset();
@@ -17,24 +19,36 @@ window.onload = function () {
             footer.innerHTML = data;
         })
 }
-function showMenu(elementId, isVisible, text) {
-    //let ids = text.split(",");
-    // for (let i = 0; i < ids.length; i++) {
-    //     document.getElementById(ids[i]).style.display = isVisible ? "none" : "block";
-    // }
-    document.getElementById(elementId).style.display = isVisible ? "block" : "none";
-    document.getElementById(elementId).style.padding = "0px";
+function toggleMenu(elementId, text) {
+    let ids = text.split(",");
+    let pageSize = document.documentElement.clientWidth;
 
-    if (isVisible) {
+    console.log(pageSize);
+    if (pageSize <= 768) {
+        for (let i = 0; i < ids.length; i++) {
+            document.getElementById(ids[i]).classList.toggle("hide");
+        }
+    }
+    let element = document.getElementById(elementId);
+    element.classList.toggle("hide");
+    element.style.padding = "0px";
+
+    if (!element.classList.contains("hide")) {
+        element.style.paddingBottom = "0px";
         let subMenus = document.getElementsByClassName("dropdown-content");
         for (const subMenu of subMenus) {
             if (subMenu.id != elementId) {
-                subMenu.style.display = "none";
+                subMenu.classList.add("hide");
             }
         }
-        setTimeout(hideElement, 2800, elementId);
+        setTimeout(hideElement, 50800, elementId);
     }
 }
 function hideElement(elementId) {
-    document.getElementById(elementId).style.display = "none";
+    document.getElementById(elementId).classList.add("hide");
+}
+
+function resizePage() {
+    console.clear();
+    console.log(document.documentElement.clientWidth);
 }

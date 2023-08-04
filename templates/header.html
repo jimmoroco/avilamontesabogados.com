@@ -7,17 +7,17 @@
     <nav class="menu">
         <a href="/index.html">Inicio</a>
         <a href="/pages/servicios.html">Servicio</a>
-        <a href="#" onclick="showMenu('menuTramitesExt',true, 'aMenuCiudadanos,aMenuContacto');">
+        <a href="#" onclick="toggleMenu('menuTramitesExt','aMenuCiudadanos,aMenuContacto');">
             Tr&aacute;mites Extranjer&iacute;a
-            <div id="menuTramitesExt" class="dropdown-content">
+            <div id="menuTramitesExt" class="dropdown-content hide center">
                 <a href="/pages/nacionalidad.html">Nacionalidad</a>
                 <a href="/pages/residencia.html">Residencia por arraigo</a>
                 <a href="/pages/permisos.html">Permisos de residencia</a>
             </div>
         </a>
-        <a href="#" id='aMenuCiudadanos' onclick="showMenu('menuCiudadanosCo',true,'aMenuContacto');">
+        <a href="#" id='aMenuCiudadanos' onclick="toggleMenu('menuCiudadanosCo','aMenuContacto');">
             Ciudadanos Comunitarios
-            <div id="menuCiudadanosCo" class="dropdown-content">
+            <div id="menuCiudadanosCo" class="dropdown-content hide center">
                 <a href="/pages/matrimonios.html">Matrimonios mixtos</a>
                 <a href="/pages/renovacion.html">Renovación de tarjeta comunitaria</a>
             </div>
