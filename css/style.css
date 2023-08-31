@@ -15,6 +15,22 @@ html {
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ul,
+li,
+ol {
+    margin-left: 30px;
+}
+
+p {
+    margin-left: 15px;
+    text-align: justify;
+}
+
 .center {
     text-align: center;
 }
@@ -24,6 +40,16 @@ html {
     background-color: red;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.section-p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 
 /* HEADER */
 
@@ -106,14 +132,14 @@ html {
 
 #menuTramitesExt a {
     padding: 5px;
-    margin-left: 151px;
+    margin-left: 115px;
     text-decoration: none;
     display: block;
 }
 
 #menuCiudadanosCo a {
     padding: 5px;
-    margin-left: 300px;
+    margin-left: 342px;
     text-decoration: none;
     display: block;
 }
@@ -320,6 +346,27 @@ html {
     margin: 30px;
     padding: 0 15px;
     font-size: 20px;
+}
+
+.title-page {
+    margin: 30px;
+    padding: 0 15px;
+}
+
+.image-pages {
+    padding-top: 15px;
+    width: 580px;
+    height: 395px;
+}
+
+.image-pages-i {
+    padding-top: 15px;
+    width: 650px;
+    height: 220px;
+}
+
+.li-number {
+    padding-top: 20px;
 }
 
 /* FOOTER */
@@ -585,6 +632,42 @@ html {
         justify-content: space-around;
         flex-direction: column;
     }
+
+    /**/
+
+    ul,
+    li,
+    ol {
+        margin-left: 2px;
+    }
+
+    p {
+        margin-left: 5px;
+        text-align: justify;
+    }
+
+    .section-p {
+        margin-left: 30px;
+        margin-right: 45px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .image-pages {
+        padding-top: 15px;
+        width: 300px;
+        /*1.46*/
+        height: 205px;
+    }
+
+    .image-pages-i {
+        padding-top: 15px;
+        width: 300px;
+        /*2.95*/
+        height: 100px;
+    }
+
+    /**/
 
     /* CONTACT*/
     .section-contact {
