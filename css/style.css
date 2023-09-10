@@ -35,6 +35,10 @@ p {
     text-align: center;
 }
 
+.justify {
+    text-align: justify;
+}
+
 .hide {
     display: none !important;
     background-color: red;
