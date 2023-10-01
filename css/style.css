@@ -106,7 +106,7 @@ p {
     position: fixed;
     color: white;
     background-color: var(--color-one);
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .logo {
